@@ -23,22 +23,22 @@ def test_1(browser):
     time.sleep(2)
     '''Заполним поле Фамилия'''
     obratnaya_svyaz.Lastname(lastname)
-    time.sleep(2)
+    time.sleep(1.5)
     '''Заполним поле телефон'''
     obratnaya_svyaz.Phone(phone)
-    time.sleep(2)
+    time.sleep(1.5)
     '''Заполним поле Почта'''
     obratnaya_svyaz.Email(email)
-    time.sleep(2)
+    time.sleep(1.5)
     '''Заполним поле Коментарий'''
     obratnaya_svyaz.Komment(kommentar)
-    time.sleep(2)
+    time.sleep(1.5)
     '''Нажмем кнопку отправить'''
     obratnaya_svyaz.Otpravit_Knopka()
-    time.sleep(2)
+    time.sleep(1.5)
 
 
     assert obratnaya_svyaz.Uvedomlenie_OK() == 'Спасибо, ваше сообщение отправлено.'
 
-    time.sleep(5)
-    #Ожидаем 5 секунд и делается проверка на сообщение
+    time.sleep(10)
+    #Ожидаем 10 секунд и делается проверка на сообщение
