@@ -14,7 +14,7 @@ class ZooSeacrhLocators:
     poisk_polei_kommentariy = (By.XPATH, "/html/body/div[3]//textarea[@class='b24-form-control']")
     knopka_otpravit = (By.XPATH, "/html/body/div[3]//div[@class='b24-form-btn-block']/button[@type='submit']")
     uvedomlenie_ob_otpravke = (By.XPATH, "//div[3]/div[2]/div[1]/div[2]//*[contains(text(),'Спасибо, ваше сообщение отправлено')]")
-
+    Uvedomlenie_OK_2 = (By.XPATH, "//div[3]/div[2]/div[1]/div[2]//*[contains(text(),'Спасибо, ваше сообщение отправлено')]")
 
 
 class Poisk(BasePage):
@@ -66,9 +66,5 @@ class Poisk(BasePage):
         m = [el.text for el in messeg]
         print("проверим, что получили в переменную M:", m)
         return "".join(m)
-
-
-
-
 
 

@@ -19,6 +19,10 @@ class BasePage:
         return WebDriverWait(self.driver, time).until(EC.presence_of_all_elements_located(locator),
                                                       message=f"Can't find elements by locator {locator}")
 
+    def find_elements2(self, locator, time=10):
+        return WebDriverWait(self.driver, time).until(EC.visibility_of_all_elements_located(locator),
+                                                      message=f"Can't find elements by locator {locator}")
+
 
      #'''Метод перехода на страницу'''#
 
