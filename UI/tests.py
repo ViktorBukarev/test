@@ -40,5 +40,5 @@ def test_1(browser):
 
     assert obratnaya_svyaz.Uvedomlenie_OK() == 'Спасибо, ваше сообщение отправлено.'
 
-    time.sleep(10)
+    time.sleep(15)
     #Ожидаем 10 секунд и делается проверка на сообщение

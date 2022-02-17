@@ -61,7 +61,7 @@ class Poisk(BasePage):
         Emailmail = self.find_element(ZooSeacrhLocators.poisk_polei_email).send_keys(email)
 
         '''Считываем полученое уведомление об успешном отправке формы'''
-    def Uvedomlenie_OK(self) ->str:
+    def Uvedomlenie_OK(self):
         messeg = self.find_elements(ZooSeacrhLocators.uvedomlenie_ob_otpravke)
         m = [el.text for el in messeg]
         print("проверим, что получили в переменную M:", m)
