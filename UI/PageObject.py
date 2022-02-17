@@ -30,7 +30,7 @@ class Poisk(BasePage):
 
     '''Кликаем на кнопку отправить'''
     def Otpravit_Knopka(self):
-        Otpravit =self.find_element(ZooSeacrhLocators.knopka_otpravit).click()
+        return self.find_element(ZooSeacrhLocators.knopka_otpravit).click()
 
         '''Ищем поле ввода Имя, очищаем и вводим данные '''
     def Name(self, name):

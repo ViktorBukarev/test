@@ -17,25 +17,25 @@ def test_1(browser):
 
     '''нажмем на кнопку Обратная связь'''
     obratnaya_svyaz.Poisk_Obratnaya_svyaz()
-    time.sleep(0.5)
+    time.sleep(2)
     '''Заполним поле имя'''
     obratnaya_svyaz.Name(name)
     time.sleep(2)
     '''Заполним поле Фамилия'''
     obratnaya_svyaz.Lastname(lastname)
-    time.sleep(1.5)
+    time.sleep(2)
     '''Заполним поле телефон'''
     obratnaya_svyaz.Phone(phone)
-    time.sleep(1.5)
+    time.sleep(2)
     '''Заполним поле Почта'''
     obratnaya_svyaz.Email(email)
-    time.sleep(1.5)
+    time.sleep(2)
     '''Заполним поле Коментарий'''
     obratnaya_svyaz.Komment(kommentar)
-    time.sleep(1.5)
+    time.sleep(2)
     '''Нажмем кнопку отправить'''
     obratnaya_svyaz.Otpravit_Knopka()
-    time.sleep(1.5)
+    time.sleep(2)
 
 
     assert obratnaya_svyaz.Uvedomlenie_OK() == 'Спасибо, ваше сообщение отправлено.'
